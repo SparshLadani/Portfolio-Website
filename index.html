@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sparsh's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&dispLay=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #282c35;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 77px;
+            background-color: #483285;
+            position: relative;
+        }
+        .left {
+            font-size: 1.8rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            padding-right: 10px;
+            margin: 0 25px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.27rem;
+        }
+        nav ul li a:hover {
+            color: #b5b5ff;
+            font-size: 1.37rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            margin-bottom: 120px;
+        }
+        .leftSection {
+            font-size: 3rem;
+            padding-top: 50px;
+            margin-right: 150px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+        .leftSection div {
+            font-size: 3rem;
+        }
+        .rightSection img {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        #element, #languages {
+            font-size: 3rem;
+            color: #785ac5;
+        }
+        .color, .textColor, .thirdSection h1 {
+            color: #785ac5;
+            font-size: 3rem;
+        }
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        hr {
+            border: 0;
+            background: #b49aff;
+            height: 1.5px;
+            margin: 70px 70px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li{
+            font-size: xx-large;
+        }
+        .skills ul li i{
+            color: white;
+            font-size: 2.5rem;
+        }
+        .thirdSection{
+            height: 370px;
+        }
+        .thirdSection .vertical{
+            display: flex;
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: auto;
+        }
+        .projectTitle {
+            position: relative;
+            top: 100px;
+            margin-right: 41px;
+            left: -29px;
+            font-size: 16px;
+        }
+        #projectDescription {
+            font-size: 15px;
+            position: relative;
+            width: 300px;
+            height: auto;
+            top: 129px;
+            left: -605px;
+            margin-bottom: 20px;
+
+        }
+        #projectDescription p {
+            font-size: 18px;
+            width: 40vw;
+            padding-left: 200px;
+            height: auto;
+            margin: auto;
+        }
+        .projectTitle a{
+            text-decoration: none;
+            color: white;
+        }
+        .thirdSection h1 {
+            align-items: center;
+            text-align: center;
+        }
+        footer{
+            background-color: #21252a;
+            height: 210px;
+        }
+        .footer{
+            display: flex;
+            margin: 70px 130px;
+            padding-top: 40px;
+            justify-content: space-evenly;
+        }
+        .list{
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+        }
+        .Name{
+            margin-left: -200px;
+        }
+        .options{
+            margin-left: 500px;
+        }
+        footer .copyright{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #444856;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <div class="left"><a href="#" style="text-decoration: none; color: white; font-size: 1.69rem;">Sparsh's Portfolio</a></div>
+        <div class="right">
+            <ul>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#secondSection">Skills</a></li>
+                <li><a href="#thirdSection">Projects</a></li>
+                <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
+                <li><a href="https://www.linkedin.com/in/sparsh-ladani-197aa0202/" target="_blank"><i class="fab fa-linkedin" style="color: white; font-size: 1.5rem;"></i></a></li>
+                <li><a href="https://github.com/SparshLadani" target="_blank"><i class="fab fa-github" style="color: white; font-size: 1.5rem;"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="firstSection" class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="color">Sparsh</span>
+            <div>And I'm a</div>
+            <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="developer.png" alt="Image of a code">
+        </div>
+    </section>
+    <p></p>
+    <hr>
+    <section id="secondSection" class="secondSection">
+        <h1><span class="textColor">Skills:</span></h1>
+        <br>
+        <br>
+        <div class="skills">
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3"></i> CSS</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-c"></i> C programming</li>
+                <li><i class="fa-solid fa-database"></i> SQL</li>
+                <li><i class="fab fa-python"></i> Django</li>
+            </ul>
+        </div>
+    </section>
+    <p></p>
+    <hr>
+    <section class="thirdSection" id="thirdSection">
+        <h1>Projects</h1>
+        <div class="box">
+            <div class="vertical">
+                <section class="projectTitle">
+                    <a href="https://github.com/SparshLadani/ToDoList" target="_blank">ToDoList</a>
+                </section>
+
+                <div id="projectDescription">
+                    <p>Designed and implemented a fully functional To Do List web application using
+                    Django, a Python-based backend framework. Key features include: User authentication for personalized lists,
+                    Task management system with CRUD operations, Intuitive UI for seamless interaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="Name">
+            <h3>Sparsh's Portfolio</h3>
+        </div>
+        <div class="options">
+            <ul class="list">
+                <li><a href="#secondSection">Skills</a></li>
+                <li><a href="#thirdSection">Projects</a></li>
+                <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright &#169 www.sparshsportfolio.com | All Rights Reserved
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    function startTypedAnimation() {
+        var typed = new Typed('#element', {
+            strings: ['Dalhousie University Student ^1000', 'Backend Enthusiast ^1000'],
+            typeSpeed: 120,
+            onComplete: function () {
+                typed.destroy();
+                startTypedAnimation();
+            }
+        });
+    }
+
+    startTypedAnimation();
+</script>
+</body>
+</html>
