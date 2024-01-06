@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sparsh's Portfolio</title>
+    <title>Sparsh Ladani</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&dispLay=swap" rel="stylesheet">
+    <link rel="icon" href="favicon-1024.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -48,7 +49,7 @@
             color: #b5b5ff;
             font-size: 1.37rem;
         }
-        .firstSection {
+        .Beginning {
             display: flex;
             justify-content: space-around;
             margin: 23px 0;
@@ -68,19 +69,19 @@
             padding-top: 50px;
             padding-left: 50px;
         }
-        #element, #languages {
+        #element{
             font-size: 3rem;
             color: #785ac5;
         }
-        .color, .textColor, .thirdSection h1 {
+        .color, .textColor, .projects h1 {
             color: #785ac5;
             font-size: 3rem;
         }
-        .secondSection {
+        .Skills {
             max-width: 80vw;
             margin: auto;
         }
-        .thirdSection {
+        .projects {
             max-width: 80vw;
             margin: auto;
         }
@@ -101,10 +102,10 @@
             color: white;
             font-size: 2.5rem;
         }
-        .thirdSection{
+        .projects{
             height: 370px;
         }
-        .thirdSection .vertical{
+        .projects .vertical{
             display: flex;
             height: 93px;
             width: 1px;
@@ -139,15 +140,15 @@
             text-decoration: none;
             color: white;
         }
-        .thirdSection h1 {
+        .projects h1 {
             align-items: center;
             text-align: center;
         }
         footer{
             background-color: #21252a;
-            height: 210px;
+            height: auto;
         }
-        .footer{
+        footer .footer{
             display: flex;
             margin: 70px 130px;
             padding-top: 40px;
@@ -173,6 +174,43 @@
             justify-content: center;
             color: #444856;
         }
+        #hackathons{
+            margin-left: 150px;
+            margin-top: -55px;
+            margin-bottom: -30px;
+        }
+        #hackathons h1{
+            color: #785ac5;
+            font-size: xxx-large;
+        }
+        #hackathons .hackathons ul li{
+            list-style-type: none;
+            margin-left: 30px;
+            font-size: 22px;
+        }
+        #hackathons .hackathons p{
+            font-size: 20px;
+        }
+        #hackathons .hackathons p:hover{
+            color: #585a65;
+            font-size: 20px;
+        }
+        .introduction{
+            margin-left: 90px;
+            margin-top: -55px;
+            margin-bottom: -30px;
+        }
+        .introduction h1{
+            color: #785ac5;
+            font-size: 50px;
+        }
+        span:hover{
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        .myInformation{
+            font-size: 25px;
+        }
 
     </style>
 </head>
@@ -183,8 +221,8 @@
         <div class="right">
             <ul>
                 <li><a href="#navbar">Home</a></li>
-                <li><a href="#secondSection">Skills</a></li>
-                <li><a href="#thirdSection">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
                 <li><a href="https://www.linkedin.com/in/sparsh-ladani-197aa0202/" target="_blank"><i class="fab fa-linkedin" style="color: white; font-size: 1.5rem;"></i></a></li>
                 <li><a href="https://github.com/SparshLadani" target="_blank"><i class="fab fa-github" style="color: white; font-size: 1.5rem;"></i></a></li>
@@ -193,7 +231,7 @@
     </nav>
 </header>
 <main>
-    <section id="firstSection" class="firstSection">
+    <section id="Beginning" class="Beginning">
         <div class="leftSection">
             Hi, My name is <span class="color">Sparsh</span>
             <div>And I'm a</div>
@@ -203,9 +241,20 @@
             <img src="developer.png" alt="Image of a code">
         </div>
     </section>
+    <hr>
+    <section id="introduction" class="introduction">
+        <h1>About Me:</h1>
+        <div class="AboutMe">
+                <p class="myInformation">Hello! I'm <span>Sparsh Ladani</span>, currently in my second year pursuing a Bachelor's in Computer Science at <span>Dalhousie University</span>.</p>
+                <p class="myInformation">My enthusiasm thrives at the <span>intersection of technology</span> and the <span>real world</span>.</p>
+                <p class="myInformation">Beyond academics, I'm devoted to exploring emerging technologies, <span>diving into new programming languages</span>, and <span>tinkering with gadgets</span>.</p>
+                <p class="myInformation">Apart from the digital realm, I'm an <span>avid badminton player</span> and <span>love discovering new places</span>.</p>
+                <p class="myInformation">Additionally, I'm a dedicated <span>self-taught Python backend enthusiast</span>, leveraging the <span>Django framework for backend development</span>.</p>
+        </div>
+    </section>
     <p></p>
     <hr>
-    <section id="secondSection" class="secondSection">
+    <section id="skills" class="Skills">
         <h1><span class="textColor">Skills:</span></h1>
         <br>
         <br>
@@ -224,14 +273,32 @@
     </section>
     <p></p>
     <hr>
-    <section class="thirdSection" id="thirdSection">
+    <section id="hackathons">
+        <h1>Hackathons:</h1>
+        <div class="hackathons">
+            <p>Nasa International Space Apps Challenge 2023:</p>
+            <br>
+            <ul>
+                <li>
+                    Contributed to NASA Space Apps 2023, honing problem-solving and innovation.
+                    <br>
+                    Collaborated on real-world space challenges, showcasing outcomes in my portfolio.
+                    <br>
+                    Strengthened communication and technical skills, connecting with professionals.
+                    <br>
+                    This experience broadened my understanding of space exploration, emphasizing efficiency and project management.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="projects" id="projects">
         <h1>Projects</h1>
         <div class="box">
             <div class="vertical">
                 <section class="projectTitle">
                     <a href="https://github.com/SparshLadani/ToDoList" target="_blank">ToDoList</a>
                 </section>
-
                 <div id="projectDescription">
                     <p>Designed and implemented a fully functional To Do List web application using
                     Django, a Python-based backend framework. Key features include: User authentication for personalized lists,
@@ -248,8 +315,8 @@
         </div>
         <div class="options">
             <ul class="list">
-                <li><a href="#secondSection">Skills</a></li>
-                <li><a href="#thirdSection">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
             </ul>
         </div>
@@ -262,7 +329,7 @@
 <script>
     function startTypedAnimation() {
         var typed = new Typed('#element', {
-            strings: ['Dalhousie University Student ^1000', 'Backend Enthusiast ^1000'],
+            strings: ['Student ^1000', 'Backend Enthusiast ^1000'],
             typeSpeed: 120,
             onComplete: function () {
                 typed.destroy();
