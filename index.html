@@ -211,7 +211,39 @@
         .myInformation{
             font-size: 25px;
         }
-
+        @media  screen and (min-width: 375px) and (max-width: 1024px) {
+            .leftSection{
+                margin-left: 20px;
+            }
+            nav{
+                width: 110vh;
+            }
+            footer{
+                width: 110vh;
+            }
+            hr{
+                width: 100vh;
+            }
+            section{
+                width: 70vh;
+            }
+            .hackathons{
+                margin-right: 80px;
+            }
+            #hackathons{
+                margin-left: 90px;
+            }
+            .h13{
+                margin-right: 10px;
+            }
+            .projects {
+                height: 430px;
+                margin-left: -50px;
+            }
+            #projectDescription p{
+                padding-left: 317px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -221,8 +253,10 @@
         <div class="right">
             <ul>
                 <li><a href="#navbar">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hr1">Introduction</a></li>
+                <li><a href="#hr2">Skills</a></li>
+                <li><a href="#hr3">Hackathons</a></li>
+                <li><a href="#hr4">Projects</a></li>
                 <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
                 <li><a href="https://www.linkedin.com/in/sparsh-ladani-197aa0202/" target="_blank"><i class="fab fa-linkedin" style="color: white; font-size: 1.5rem;"></i></a></li>
                 <li><a href="https://github.com/SparshLadani" target="_blank"><i class="fab fa-github" style="color: white; font-size: 1.5rem;"></i></a></li>
@@ -241,7 +275,7 @@
             <img src="developer.png" alt="Image of a code">
         </div>
     </section>
-    <hr>
+    <hr id="hr1">
     <section id="introduction" class="introduction">
         <h1>About Me:</h1>
         <div class="AboutMe">
@@ -253,7 +287,7 @@
         </div>
     </section>
     <p></p>
-    <hr>
+    <hr id="hr2">
     <section id="skills" class="Skills">
         <h1><span class="textColor">Skills:</span></h1>
         <br>
@@ -272,9 +306,9 @@
         </div>
     </section>
     <p></p>
-    <hr>
+    <hr id="hr3">
     <section id="hackathons">
-        <h1>Hackathons:</h1>
+        <h1 class="h13">Hackathons:</h1>
         <div class="hackathons">
             <p>Nasa International Space Apps Challenge 2023:</p>
             <br>
@@ -291,7 +325,7 @@
             </ul>
         </div>
     </section>
-    <hr>
+    <hr id="hr4">
     <section class="projects" id="projects">
         <h1>Projects</h1>
         <div class="box">
@@ -311,22 +345,28 @@
 <footer>
     <div class="footer">
         <div class="Name">
-            <h3>Sparsh's Portfolio</h3>
+            <h3 style="margin-left: 35px;"><a href="#navbar" style="text-decoration: none; color: white;">Sparsh's Portfolio</a></h3>
         </div>
         <div class="options">
             <ul class="list">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hr1">Intoduction</a></li>
+                <li><a href="#hr2">Skills</a></li>
+                <li><a href="#hr3">Hackathons</a></li>
+                <li><a href="#hr4">Projects</a></li>
                 <li><a href="mailto: sp835101@dal.ca" target="_blank">Contact Me</a></li>
             </ul>
         </div>
     </div>
     <div class="copyright">
-        Copyright &#169 www.sparshsportfolio.com | All Rights Reserved
+        Copyright &#169 https://sparshladani.github.io/Portfolio-Website | All Rights Reserved
     </div>
 </footer>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    console.log(w);
+    console.log(h);
     function startTypedAnimation() {
         var typed = new Typed('#element', {
             strings: ['Student ^1000', 'Backend Enthusiast ^1000'],
